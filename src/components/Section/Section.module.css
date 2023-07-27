@@ -1,0 +1,16 @@
+.section {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.section:first-child {
+  margin-bottom: 10px;
+}
