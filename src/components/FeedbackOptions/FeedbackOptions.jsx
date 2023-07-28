@@ -2,10 +2,12 @@ import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css'
 
 function FeedbackOptions({ options, onLeaveFeedback }) {
+  const { btn } = css;
+
     return options.map(option => (
       <button
         type="button"
-        className={`${css.btn} ${css[option.toLowerCase()]}`}
+        className={`${btn} ${css[option.toLowerCase()]}`}
         key={option}
         onClick={() => onLeaveFeedback(option)}
       >
